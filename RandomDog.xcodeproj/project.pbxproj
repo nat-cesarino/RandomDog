@@ -15,6 +15,9 @@
 		2E5A21C227C4FA0A004B6769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5A21C027C4FA0A004B6769 /* LaunchScreen.storyboard */; };
 		2E5A21CD27C4FA0A004B6769 /* RandomDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A21CC27C4FA0A004B6769 /* RandomDogTests.swift */; };
 		2E5A21D827C4FA0A004B6769 /* RandomDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A21D727C4FA0A004B6769 /* RandomDogUITests.swift */; };
+		2E5A21E927C4FA43004B6769 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A21E827C4FA43004B6769 /* DogAPI.swift */; };
+		2E9138DA27C64328007B2867 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9138D927C64328007B2867 /* DogImage.swift */; };
+		2EC750D227CEBF9900F08074 /* BreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC750D127CEBF9900F08074 /* BreedsListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2E5A21D327C4FA0A004B6769 /* RandomDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5A21D727C4FA0A004B6769 /* RandomDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogUITests.swift; sourceTree = "<group>"; };
 		2E5A21D927C4FA0A004B6769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5A21E827C4FA43004B6769 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		2E9138D927C64328007B2867 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		2EC750D127CEBF9900F08074 /* BreedsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,9 @@
 		2E5A21B427C4FA09004B6769 /* RandomDog */ = {
 			isa = PBXGroup;
 			children = (
-				2E5A21B527C4FA09004B6769 /* AppDelegate.swift */,
-				2E5A21B727C4FA09004B6769 /* SceneDelegate.swift */,
-				2E5A21B927C4FA09004B6769 /* ViewController.swift */,
-				2E5A21BB27C4FA09004B6769 /* Main.storyboard */,
-				2E5A21BE27C4FA0A004B6769 /* Assets.xcassets */,
-				2E5A21C027C4FA0A004B6769 /* LaunchScreen.storyboard */,
+				2E5A21E727C4FA36004B6769 /* Model */,
+				2E5A21E627C4FA28004B6769 /* Controller */,
+				2E5A21E527C4FA14004B6769 /* View */,
 				2E5A21C327C4FA0A004B6769 /* Info.plist */,
 			);
 			path = RandomDog;
@@ -126,6 +129,36 @@
 				2E5A21D927C4FA0A004B6769 /* Info.plist */,
 			);
 			path = RandomDogUITests;
+			sourceTree = "<group>";
+		};
+		2E5A21E527C4FA14004B6769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E5A21B727C4FA09004B6769 /* SceneDelegate.swift */,
+				2E5A21BB27C4FA09004B6769 /* Main.storyboard */,
+				2E5A21BE27C4FA0A004B6769 /* Assets.xcassets */,
+				2E5A21C027C4FA0A004B6769 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E5A21E627C4FA28004B6769 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E5A21B527C4FA09004B6769 /* AppDelegate.swift */,
+				2E5A21B927C4FA09004B6769 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E5A21E727C4FA36004B6769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E5A21E827C4FA43004B6769 /* DogAPI.swift */,
+				2E9138D927C64328007B2867 /* DogImage.swift */,
+				2EC750D127CEBF9900F08074 /* BreedsListResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5A21BA27C4FA09004B6769 /* ViewController.swift in Sources */,
+				2E9138DA27C64328007B2867 /* DogImage.swift in Sources */,
 				2E5A21B627C4FA09004B6769 /* AppDelegate.swift in Sources */,
+				2EC750D227CEBF9900F08074 /* BreedsListResponse.swift in Sources */,
 				2E5A21B827C4FA09004B6769 /* SceneDelegate.swift in Sources */,
+				2E5A21E927C4FA43004B6769 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
